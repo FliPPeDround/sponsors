@@ -1,12 +1,32 @@
 {
   "name": "sponsors",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.15.1",
+  "license": "MIT",
+  "homepage": "https://github.com/FliPPeDround/sponsors#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FliPPeDround/sponsors.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "bugs": {
+    "url": "https://github.com/FliPPeDround/sponsors/issues"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "build": "sponsorkit -f",
+    "check:deps": "taze -f",
+    "check:types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.3",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.10",
+    "eslint": "^8.56.0",
+    "sponsorkit": "^0.9.1",
+    "taze": "^0.13.1",
+    "typescript": "^5.3.3"
+  }
 }
