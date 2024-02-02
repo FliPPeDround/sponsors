@@ -1,0 +1,27 @@
+name: sponsors
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update-sponsors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: pnpm
+      - run: pnpm install
+      - run: pnpm run build
+        env:
+          SPONSORKIT_AFDIAN_USER_ID: ${{ secrets.SPONSORKIT_AFDIAN_USER_ID }}
+          SPONSORKIT_AFDIAN_TOKEN: ${{ secrets.SPONSORKIT_AFDIAN_TOKEN }}
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: "chore: update sponsors"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
