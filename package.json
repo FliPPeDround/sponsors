@@ -16,9 +16,7 @@
     "node": "20"
   },
   "scripts": {
-    "build": "sponsorkit -f",
-    "check:deps": "taze -f",
-    "check:types": "tsc --noEmit"
+    "build": "sponsorkit -f"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.3",
@@ -26,7 +24,6 @@
     "@types/node": "^20.11.10",
     "eslint": "^8.56.0",
     "sponsorkit": "^0.9.1",
-    "taze": "^0.13.1",
     "typescript": "^5.3.3"
   }
 }
