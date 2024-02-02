@@ -27,4 +27,4 @@ jobs:
         with:
           message: "chore: update sponsors"
         env:
-          GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
