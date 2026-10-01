@@ -15,26 +15,13 @@
     "privacyLevel": "PUBLIC",
     "tierName": "Afdian",
     "createdAt": "2026-08-31T13:40:42.000Z",
-    "isOneTime": true,
+    "isOneTime": false,
     "provider": "afdian",
     "raw": {
-      "sponsor_plans": [
-        {
-          "name": "自选方案",
-          "plan_id": "",
-          "price": "99.00",
-          "expire_time": 1790784000,
-          "sku_processed": [],
-          "rankType": 40
-        }
-      ],
+      "sponsor_plans": [],
       "current_plan": {
-        "name": "自选方案",
-        "plan_id": "",
-        "price": "99.00",
-        "expire_time": null,
-        "sku_processed": [],
-        "rankType": 40
+        "name": "",
+        "expire_time": null
       },
       "all_sum_amount": "99.00",
       "first_pay_time": 1788183642,
